@@ -1,0 +1,31 @@
+h1
+{
+	color:white;
+	text-align: center;
+	text-align: top;
+	font-family: 'Playfair Display', serif;
+}
+h3
+{
+	text-align: center;
+}
+p
+{
+	text-align: center;
+	color: white;
+}
+
+body
+{
+
+	background: linear-gradient(black, gray);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 120%;
+	color: white;
+}
+table
+{
+	margin-top: 0 auto;
+	margin: 0 auto;
+	list-style-type: none;
+}
