@@ -1,0 +1,84 @@
+<!--doctype html-->
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Partie SOLO</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- En tête de la page -->
+                <div id="En-Tete">
+                    <nav>
+                        <ul>
+                            <li class="menu"><a href="page2.html">Présentation</a>
+                                <ul class="submenu">
+                                    <li><a href="page2.html#CahierdesCharges">Cahier des Charges</a></li>
+                                    <li><a href="page2.html#TDM">Table des matières</a></li>
+                                    <li><a href="page2.html#RDT">Répartition des tâches</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu"><a href="somaire.html">Sommaire</a>
+                                <ul class="submenu">
+                                    <li><a href="somaire.html#QSN">Qui sommes-nous ?</a></li>
+                                    <li><a href="somaire.html#NPRJT">Notre projet</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu"><a href="Site html.html">The Last</a>
+                            </li>
+                            <li class="menu"><a href="parti_solo.html">Partie Solo</a>
+                                <ul class="submenu">
+                                    <li><a href="parti_solo.html#alexis">Alexis Wagner</a></li>
+                                    <li><a href="parti_solo.html#yanis">Yanis Copper</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu"><a href="parti_multi.html">Partie Multijoueur</a>
+                                <ul class="submenu">
+                                    <li><a href="parti_multi.html#alexandre">Alexandre Delahaye</a></li>
+                                    <li><a href="parti_multi.html#iskander">Iskander Naid-Meirzoug</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- Fin de l'en tête de la page -->
+            <!--Corps de la page -->
+            <br><br><br><br><br><br> 
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gRMXiHL6pvk" 
+                    title="The Last - Map solo" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </center>
+            <h2>Histoire du Mode Solo</h2>
+            <div class="cdc">
+                <p>Le mode solo n'est composé que d'un seul mode : un mode survie. Le but est de protéger sa base et de survivre contre des vagues d'ennemis venu pour vous tuer.
+                    Votre objectif est de survivre à 100 vagues d'ennemis, tous de plus en plus puissant et de plus en plus coriace. Lors de la 100ème vague une alarme vas se déclancher, elle annonce l'arrivé d'une bombe venue vous sauver. 
+                    Mais attention cette bombe peu aussi vous tuer si vous ne trouvez pas un refuge rapidement. Faites preuve d'observation éviter de vous faire tuer ! Vous êtes votre unique allié !
+                </p>
+            </div>
+            
+            <h1 id="alexis"><br>Alexis Wagner</h1>
+            <h2>Création du Mode Solo</h2>
+            <div class="cdc">
+                <p>
+                    Tout d'abord afin de créer ce mode de jeu, Yanis à confectionner la carte sur Unity puis l'a envoyé à Alexis afin qu'il puisse commencer à le réaliser.
+                </p>
+                <h2>Implémentation :</h2>
+                <p>
+                    <br> 
+                    Par la suite Alexis a implémenter les règles et le code du mode solo afin d'avoir un jeu fonctionnel. Pour ce faire il a tout d'abord implémenter les différentes IAs ainsi que leur point de vie, dégâts et objectif.
+                    Il a continué en implémentant le spawner d'ennemis qui fait apparaitre les ennemis de façon aléatoire à chaque vagues. Puis il c'est occupé de toute la partie visuel et HUD du player, c'est à dire le menu, le shop ( et son implémentation ), ainsi que des capacités du joueur.
+                    Les scripts écrits afin de pouvoir avoir un jeu fonctionnel ont été réaliser en C# ce qui nous à permis de les écrires rapidement car nous pratiquons ce langage à EPITA.
+                </p>
+            </div>
+             <!-- Fin corps de la page -->
+            </div>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!--doctype html-->
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Partie Multijoueur</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!-- En tête de la page -->
+                <div id="En-Tete">
+                    <nav>
+                        <ul>
+                            <li class="menu"><a href="page2.html">Présentation</a>
+                                <ul class="submenu">
+                                    <li><a href="page2.html#CahierdesCharges">Cahier des Charges</a></li>
+                                    <li><a href="page2.html#TDM">Table des matières</a></li>
+                                    <li><a href="page2.html#RDT">Répartition des tâches</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu"><a href="somaire.html">Sommaire</a>
+                                <ul class="submenu">
+                                    <li><a href="somaire.html#QSN">Qui sommes-nous ?</a></li>
+                                    <li><a href="somaire.html#NPRJT">Notre projet</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu"><a href="Site html.html">The Last</a>
+                            </li>
+                            <li class="menu"><a href="parti_solo.html">Partie Solo</a>
+                                <ul class="submenu">
+                                    <li><a href="parti_solo.html#alexis">Alexis Wagner</a></li>
+                                    <li><a href="parti_solo.html#yanis">Yanis Copper</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu"><a href="parti_multi.html">Partie Multijoueur</a>
+                                <ul class="submenu">
+                                    <li><a href="parti_multi.html#alexandre">Alexandre Delahaye</a></li>
+                                    <li><a href="parti_multi.html#iskander">Iskander Naid-Meirzoug</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!-- Fin de l'en tête de la page -->
+            <!--Corps de la page -->
+            <h1 id="alexandre"><br> Alexandre Delahaye</h1>
+            <h2>Création du Multijoueur</h2>
+            <div class="cdc">
+            <p>Le multijoueur se compose de deux modes de jeu : une capture de zone dans laquelle les joueurs s’affrontent et se disputent une zone dans laquelle il faut rester le plus longtemps possible en chassant les autres joueurs pour gagner, et une capture de drapeau 
+                dans laquelle les joueurs doivent capturer le drapeau de l’autre équipe et le ramener à leur base.
+            </p>
+                <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-qd_7OFZQ3c" 
+                    title="The Last ModeCTF" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </center>
+            <p>    
+                Chaque mode de jeu a une carte dédiée mais il est important de noter que nous avons créé notre code de manière suffisamment modulaire pour pouvoir l’implémenter sur n’importe quelle carte sans avoir à réellement modifier le script.
+            </p>
+            <h2>Implémentation :</h2>
+            <p>    
+                <br>
+                L’implémentation du multijoueur s’est réalisée avec une API de UnityEngine nommée « UNet High Level API » qui contient un ensemble de classes et fonctions permettant une synchronisation de la partie pour tous les joueurs.
+                La difficulté rencontrée durant cette phase du projet a été la compréhension du fonctionnement de la programmation en Network que j’ai trouvé plus difficile d’approche que le scripting habituel sous Unity.
+                <br>En effet il y a des notions que j’ai découvert comme le choix des éléments à synchroniser entre les joueurs, la notion de « client-side » et de « server-side », et de « Server Authority », qui permet une meilleure fiabilité ainsi qu’une gestion de la partie plus claire, 
+                l’optimisation de l’utilisation du réseau, ou encore le fait que certaines structures de données ne peuvent pas être transmises sur le réseau. De plus les scripts qui n’auraient fait qu’une quinzaine de ligne en local, peuvent en atteindre quelques centaines en network, 
+                et le temps de résolution de problèmes habituellement mineurs s’en retrouve également décuplé, ce qui peut mener à une frustration de voir son équipe avancer grandement tandis que j’ai l’impression de tourner en rond, mais voir ce projet prendre peu a peu vie de peut que me motiver d’avantage, 
+                sans compter que, bien que difficile d’approche, j’ai trouvé cette partie network, on ne peut plus intéressante. 
+            </p>
+            </div>
+             <!-- Fin corps de la page -->
+            </div>
+        </div>
+    </body>
+</html>
