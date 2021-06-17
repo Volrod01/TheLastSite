@@ -1,0 +1,262 @@
+/*En-Tete*/
+
+nav > ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav
+{
+    width: 100%;
+    background-color: transparent;
+}
+
+nav li
+{
+    list-style-type: none;
+    text-align: left;
+}
+
+.menu
+{
+    margin-left: 85px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav ul li
+{
+    float: left;
+    position: relative;
+}
+
+nav ul li a
+{
+    padding: 20px 30px;
+    color: #744edb;
+}
+
+nav ul li:hover a 
+{
+    padding: 15px 30px 20px 30px;
+    color: #744edb;
+}
+
+nav ul::after
+{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.submenu
+{
+    display: none;
+}
+
+nav li:hover .submenu
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li a
+{
+    padding: 15px 30px;
+    font-size: 19px;
+    color: #666666;
+    width: 252px;
+}
+
+nav a
+{
+    display: inline-block;
+    color: #272626;
+}
+
+.menu:hover
+{
+    border-top: 5px solid #666666;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu .submenu
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.submenu li:hover a
+{
+    font-weight: bold;
+    background-color: rgba(180, 180, 180, 0.4);
+}
+
+nav ul:hover
+{
+    background-color: rgb(0, 0, 0);
+}
+
+
+img.display
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer
+{
+    background-color: transparent;
+    text-align: center;
+    position: relative;
+    margin : auto;
+    width : auto;
+    height : auto;
+}
+
+body
+{
+    background-image:radial-gradient(#ffffff,gray);
+    text-decoration: none;
+}
+
+body, a
+{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    background-size: 100%;
+    font-family: 'Audiowide', cursive;
+}
+
+img.gauche
+{
+    margin-left: 10px;
+}
+
+
+h3
+{
+    color: #744edb;
+}
+h2
+{
+    color: black;
+}
+
+h1
+{
+    font-size: 50px;
+}
+
+.slider
+{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slide 30s infinite;
+
+}
+
+.banner
+{
+    width: 100%;
+    height:  100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner .content
+{
+    position: relative;
+   
+}
+
+/*@keyframes slide
+{
+    0%{
+        background-image: url("cpu.jpg");
+    }
+    25%{
+        background-image: url("espace.jpg");
+    }
+    50%{
+        background-image: url("cpu.jpg");
+    }
+    75%{
+        background-image: url("cpu.jpg");
+    }
+    80%{
+        background-image: url("espace.jpg");
+    }
+    0%{
+        background-image: url("cpu.jpg");
+    }
+    100%{
+        background-image: url("cpu.jpg");
+    }
+}*/
+
+.puce
+{
+    list-style: none;
+    
+}
+
+.mep
+{
+    text-align: justify;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+}
+
+.tdm a
+{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.cdc, h1{
+    text-align: center;
+}
+.cdc, h2{
+    margin-left: 10%;
+}
+.cdc, h3{
+    margin-left: 15%;
+}
+.cdc, p{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+.centrer p
+{
+    text-align: center;
+}
+
+.blanc{
+    color: white;
+}
